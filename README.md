@@ -10,7 +10,7 @@ Personal computer with Keil software
 
 **PROGRAM:**
 
-**(i)	Serial port transfer a character A**
+**(i)	Serial port transfer a character R**
 
 #include<reg51.h> void main(void)
 
@@ -22,7 +22,7 @@ SCON=0X50; TR1=1;
 
 while(1)
 
-{ SBUF='A';
+{ SBUF='R';
 
 while(TI==0); TI=0;
 
@@ -36,7 +36,7 @@ while(TI==0); TI=0;
 
 {
 
-unsigned char msg[]="Programming 8051"; unsigned char i;
+unsigned char msg[]="Serial port to Transfer a Message"; unsigned char i;
 
 TMOD=0X20;//TIMER 1,MODE 2 TH1=0XFA;
 
@@ -56,11 +56,14 @@ while(1);
 
  
 **OUTPUT:**
-<br>
-<br>
-<br>
-<br>
-<br>
+
+**(i)	Serial port transfer a character R**
+<img width="1919" height="1079" alt="Screenshot 2025-11-11 082749" src="https://github.com/user-attachments/assets/89f3d28e-7f6c-4050-a590-60103c6ac429" />
+
+**(ii)	Serial port to Transfer a Message**
+<img width="1918" height="1079" alt="Screenshot 2025-11-11 093847" src="https://github.com/user-attachments/assets/6489cbc3-17f7-47cd-9eb8-6826fa218ee1" />
+
+
 
 **Result:**
 
